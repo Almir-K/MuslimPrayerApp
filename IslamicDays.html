@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Special Islamic Days</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      body {
+        background-image: url("https://images.unsplash.com/photo-1542816417-0983c9c9ad53?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column; /* Align items vertically */
+        position: relative;
+      }
+
+      .back-arrow {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        z-index: 999;
+      }
+
+      .social {
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%; /* Adjust width of social icons container */
+      }
+
+      .social a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px; /* Spacing between icons */
+      }
+
+      .social i {
+        font-size: 24px;
+      }
+
+      iframe {
+        border: 1px solid #ddd;
+        max-width: 100%;
+        height: 44vh; /* Adjust height to fit the remaining space */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back-arrow" onclick="goBack()">
+      <i class="fas fa-arrow-left"></i>Tillbaka
+    </div>
+    <div class="social">
+      <a
+        href="https://open.spotify.com/show/4jUR6E3ZST5NmHDTNdk3EW?si=0074df3e626844a7"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-spotify"></i>Lyssna på Quran
+      </a>
+      <a
+        href="https://www.facebook.com/profile.php?id=100069969767226&locale=sv_SE"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-facebook"></i>Följ oss
+      </a>
+    </div>
+
+    <div id="iframeContainer">
+      <iframe
+        style="border-radius: 20px"
+        scrolling="no"
+        src="https://www.islamicfinder.org/specialislamicdays"
+      ></iframe>
+    </div>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

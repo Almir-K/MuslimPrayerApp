@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Prayer App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      body {
+        background: url("https://images.unsplash.com/photo-1624345690156-2d094a84aecf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left; /* Set background position to left top */
+
+        margin: 0; /* Reset default margin */
+        padding: 0; /* Rese default padding */
+        height: 100vh; /* Set body height to full viewport height */
+      }
+
+      #iframe .widget-m-top {
+        height: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a
+        href="https://open.spotify.com/show/4jUR6E3ZST5NmHDTNdk3EW?si=0074df3e626844a7"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-spotify">Lyssna på Quran</i>
+        <!-- Font Awesome Spotify icon -->
+      </a>
+      <a
+        href="https://www.facebook.com/profile.php?id=100069969767226&locale=sv_SE"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-facebook">Följ oss</i>
+        <!-- Font Awesome Facebook icon -->
+      </a>
+      <a href="IslamicDays.html">Islamska dagar</a>
+    </nav>
+    <h1>Åstorps Moske</h1>
+
+    <!-- Embedding the IslamicFinder city-specific prayer times widget -->
+    <div class="city-prayer-times">
+      <iframe
+        id="iframe"
+        title="prayerWidget"
+        class="widget-m-top"
+        style="height: 275px; border: 1px solid #f7f7f7"
+        scrolling="no"
+        src="https://timesprayer.com/widgets.php?frame=2&amp;lang=en&amp;name=%C3%A5storp&amp;avachang=true&amp;method=3&amp;time=0"
+        style="border: none; overflow: hidden; width: 100%; height: 275px"
+      ></iframe>
+    </div>
+    <!-- hadith -->
+
+    <div class="hadith-container">
+      <script
+        type="text/javascript"
+        src="http://ahadith.co.uk/dh_v1.1.php"
+      ></script>
+
+      <noscript>Please enable JavaScript to see daily hadith</noscript>
+    </div>
+    <iframe
+      class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d555.8144111570508!2d12.94883782740745!3d56.135357198159355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653d3ec9a35e8c9%3A0x28b5dba537dbe8ea!2sStorgatan%206%2C%20265%2034%20%C3%85storp!5e0!3m2!1ssv!2sse!4v1699985269326!5m2!1ssv!2sse"
+      width="400"
+      height="350"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <div class="centered-script">
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
