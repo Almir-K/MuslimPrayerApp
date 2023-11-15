@@ -32,13 +32,6 @@ h1 {
   align-items: center;
   margin: 50px; /* Center the container and add some margin */
 }
-.hadith-container {
-  color: rgb(51, 50, 50);
-  font-size: 18px;
-  font-weight: bolder;
-  text-align: center;
-  flex-direction: column;
-}
 
 .icons-container {
   align-items: center;
@@ -63,5 +56,5 @@ h1 {
   opacity: 80%;
   position: absolute;
   top: 100%;
-  transform: translateY(-80%);
+  transform: translateY(-100%);
 }
